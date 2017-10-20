@@ -1,0 +1,1454 @@
+[ 2017-10-20T15:05:43+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/Admin-link-index.html
+[ log ] loveteemo.com/index.php/Admin-link-index.html [运行时间：0.209012s][吞吐率：4.78req/s] [内存消耗：2,688.26kb] [文件加载：51]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'link',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437; _ga=GA1.2.1383165003.1507700041',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_member` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `mem_id` FROM `lt_member` WHERE  `mem_auth` = 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-10-20T15:05:43+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/Admin-login-index.html
+[ log ] loveteemo.com/index.php/Admin-login-index.html [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：1,612.33kb] [文件加载：40]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437; _ga=GA1.2.1383165003.1507700041; PHPSESSID=euo1nt2dnfi5ugif9aolvpb1l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\wamp\www\zc\blog\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ VIEW ] D:\wamp\www\zc\blog\public/../application/admin\view\login/index.html [ array (
+  0 => 'tip',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-10-20T15:05:43+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/login-qq.html
+[ log ] loveteemo.com/index.php/login-qq.html [运行时间：0.207012s][吞吐率：4.83req/s] [内存消耗：3,089.44kb] [文件加载：61]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'Base',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://loveteemo.com/index.php/Admin-login-index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437; _ga=GA1.2.1383165003.1507700041; PHPSESSID=euo1nt2dnfi5ugif9aolvpb1l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Base->login[ D:\wamp\www\zc\blog\application\index\controller\Base.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_menu` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_menu` WHERE  `menu_view` = 1 ORDER BY menu_sort [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_system` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] UPDATE `lt_system`  SET `sys_hits`=sys_hits+1  WHERE  `sys_id` = 1 [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_system` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_banner` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_banner` WHERE  `ban_view` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_article` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_keyword` FROM `lt_article` WHERE  (  art_view != 0 ) ORDER BY art_hit desc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view > 0 and art_down = 0  ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (2,1)  AND `art_down` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_comment` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `ac`.`com_id`,`ac`.`com_artid`,`ac`.`com_userid`,`m`.`mem_img`,`m`.`mem_name`,`ac`.`com_content`,`a`.`art_down` FROM `lt_comment` `ac` INNER JOIN `lt_article` `a` ON `a`.`art_id`=ac.com_artid and a.art_view > 0 INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`ac`.`com_userid` WHERE  (  ac.com_view = 1 and ac.com_artid > 0 ) ORDER BY ac.com_id desc LIMIT 5 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `c`.`com_id`,`c`.`com_content`,`m`.`mem_name`,`m`.`mem_img` FROM `lt_comment` `c` INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`c`.`com_userid` WHERE  `com_artid` = 0 ORDER BY com_id desc LIMIT 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_hit`,`art_title` FROM `lt_article` ORDER BY art_hit desc LIMIT 8 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_article` WHERE  (  art_view > 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view = 1 and com_artid != 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view= 1 and com_artid = 0 ) LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view = 2 and art_down = 0  ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (2,1)  AND `art_down` = 0 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_link` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_link` WHERE  `link_view` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_title` FROM `lt_article` WHERE  `art_down` = 1 ORDER BY art_downloadnums desc LIMIT 4 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-10-20T15:05:51+08:00 ] 127.0.0.1 127.0.0.1 GET /index/base/callback?code=8E1038645610B7784C3C943FF24A5D97&state=345ca090bc57090bf5e918df8b2fb7e4
+[ log ] loveteemo.com/index/base/callback?code=8E1038645610B7784C3C943FF24A5D97&state=345ca090bc57090bf5e918df8b2fb7e4 [运行时间：1.769101s][吞吐率：0.57req/s] [内存消耗：3,110.19kb] [文件加载：62]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'base',
+    2 => 'callback',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437; _ga=GA1.2.1383165003.1507700041; PHPSESSID=euo1nt2dnfi5ugif9aolvpb1l0',
+)
+[ info ] [ PARAM ] array (
+  'code' => '8E1038645610B7784C3C943FF24A5D97',
+  'state' => '345ca090bc57090bf5e918df8b2fb7e4',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Base->callback[ D:\wamp\www\zc\blog\application\index\controller\Base.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ VIEW ] D:\wamp\www\zc\blog\public/../application/index\view\base_callback.html [ array (
+  0 => 'menuinfo',
+  1 => 'systeminfo',
+  2 => 'bannerlist',
+  3 => 'siderdata',
+  4 => 'footdata',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_menu` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_menu` WHERE  `menu_view` = 1 ORDER BY menu_sort [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_system` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] UPDATE `lt_system`  SET `sys_hits`=sys_hits+1  WHERE  `sys_id` = 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_system` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_banner` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_banner` WHERE  `ban_view` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_article` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_keyword` FROM `lt_article` WHERE  (  art_view != 0 ) ORDER BY art_hit desc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view > 0 and art_down = 0  ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (2,1)  AND `art_down` = 0 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_comment` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `ac`.`com_id`,`ac`.`com_artid`,`ac`.`com_userid`,`m`.`mem_img`,`m`.`mem_name`,`ac`.`com_content`,`a`.`art_down` FROM `lt_comment` `ac` INNER JOIN `lt_article` `a` ON `a`.`art_id`=ac.com_artid and a.art_view > 0 INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`ac`.`com_userid` WHERE  (  ac.com_view = 1 and ac.com_artid > 0 ) ORDER BY ac.com_id desc LIMIT 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `c`.`com_id`,`c`.`com_content`,`m`.`mem_name`,`m`.`mem_img` FROM `lt_comment` `c` INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`c`.`com_userid` WHERE  `com_artid` = 0 ORDER BY com_id desc LIMIT 5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_hit`,`art_title` FROM `lt_article` ORDER BY art_hit desc LIMIT 8 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_article` WHERE  (  art_view > 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view = 1 and com_artid != 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view= 1 and com_artid = 0 ) LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view = 2 and art_down = 0  ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (1,2)  AND `art_down` = 0 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_link` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_link` WHERE  `link_view` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_title` FROM `lt_article` WHERE  `art_down` = 1 ORDER BY art_downloadnums desc LIMIT 4 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_member` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_member` WHERE  `mem_openid` = '2DF96DF45CF2165B41AE42968465DA11' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `lt_member`  SET `mem_logintime`=1508483151,`mem_loginnum`=mem_loginnum+1  WHERE  `mem_id` = 1 [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2017-10-20T15:05:51+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/Admin-login-index.html
+[ log ] loveteemo.com/index.php/Admin-login-index.html [运行时间：0.058003s][吞吐率：17.24req/s] [内存消耗：2,649.09kb] [文件加载：50]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://loveteemo.com/index.php/Admin-login-index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437; _ga=GA1.2.1383165003.1507700041; PHPSESSID=euo1nt2dnfi5ugif9aolvpb1l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\wamp\www\zc\blog\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_member` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `mem_id` FROM `lt_member` WHERE  `mem_auth` = 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-10-20T15:05:51+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/Admin-index-index.html
+[ log ] loveteemo.com/index.php/Admin-index-index.html [运行时间：0.074004s][吞吐率：13.51req/s] [内存消耗：2,881.64kb] [文件加载：57]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://loveteemo.com/index.php/Admin-login-index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437; _ga=GA1.2.1383165003.1507700041; PHPSESSID=euo1nt2dnfi5ugif9aolvpb1l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\wamp\www\zc\blog\application\admin\controller\Index.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\wamp\www\zc\blog\public/../application/admin\view\index/index.html [ array (
+  0 => 'a_indexdata',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_member` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `mem_id` FROM `lt_member` WHERE  `mem_auth` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_article` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_article` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_comment` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view = 1 and com_artid != 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view= 1 and com_artid = 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_link` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_link` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_member` LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-10-20T15:05:53+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/Admin-system-index.html
+[ log ] loveteemo.com/index.php/Admin-system-index.html [运行时间：0.065003s][吞吐率：15.38req/s] [内存消耗：2,735.16kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'system',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://loveteemo.com/index.php/Admin-index-index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437; _ga=GA1.2.1383165003.1507700041; PHPSESSID=euo1nt2dnfi5ugif9aolvpb1l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\System->index[ D:\wamp\www\zc\blog\application\admin\controller\System.php ]
+[ info ] [ VIEW ] D:\wamp\www\zc\blog\public/../application/admin\view\system/index.html [ array (
+  0 => 'qq_inc',
+  1 => 'mail_inc',
+  2 => 'systeminfo',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_member` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `mem_id` FROM `lt_member` WHERE  `mem_auth` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_system` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_system` LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-10-20T15:07:32+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/Admin-system-sdk.html
+[ log ] loveteemo.com/index.php/Admin-system-sdk.html [运行时间：0.086005s][吞吐率：11.63req/s] [内存消耗：2,603.76kb] [文件加载：50]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'system',
+    2 => 'sdk',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'content-length' => '117',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://loveteemo.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://loveteemo.com/index.php/Admin-system-index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437; _ga=GA1.2.1383165003.1507700041; PHPSESSID=euo1nt2dnfi5ugif9aolvpb1l0',
+)
+[ info ] [ PARAM ] array (
+  'appid' => '101436348',
+  'appkey' => '85a41e90d0a6eba4c1c0a359967cd59c',
+  'callback' => 'http://loveteemo.com/index/base/callback',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\System->sdk[ D:\wamp\www\zc\blog\application\admin\controller\System.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_member` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `mem_id` FROM `lt_member` WHERE  `mem_auth` = 1 [ RunTime:0.001001s ]
+
+---------------------------------------------------------------
+[ 2017-10-20T15:07:33+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/Admin-system-index.html
+[ log ] loveteemo.com/index.php/Admin-system-index.html [运行时间：0.067004s][吞吐率：14.92req/s] [内存消耗：2,735.26kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'system',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://loveteemo.com/index.php/Admin-system-index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437; _ga=GA1.2.1383165003.1507700041; PHPSESSID=euo1nt2dnfi5ugif9aolvpb1l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\System->index[ D:\wamp\www\zc\blog\application\admin\controller\System.php ]
+[ info ] [ VIEW ] D:\wamp\www\zc\blog\public/../application/admin\view\system/index.html [ array (
+  0 => 'qq_inc',
+  1 => 'mail_inc',
+  2 => 'systeminfo',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_member` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `mem_id` FROM `lt_member` WHERE  `mem_auth` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_system` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_system` LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-10-20T15:07:36+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/Admin-auth-clean.html
+[ log ] loveteemo.com/index.php/Admin-auth-clean.html [运行时间：0.070004s][吞吐率：14.28req/s] [内存消耗：2,561.96kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'auth',
+    2 => 'clean',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://loveteemo.com/index.php/Admin-system-index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437; _ga=GA1.2.1383165003.1507700041; PHPSESSID=euo1nt2dnfi5ugif9aolvpb1l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Auth->clean[ D:\wamp\www\zc\blog\application\admin\controller\Auth.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_member` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `mem_id` FROM `lt_member` WHERE  `mem_auth` = 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-10-20T15:07:47+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] loveteemo.com/ [运行时间：0.147008s][吞吐率：6.80req/s] [内存消耗：3,323.55kb] [文件加载：60]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437; _ga=GA1.2.1383165003.1507700041; PHPSESSID=euo1nt2dnfi5ugif9aolvpb1l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp\www\zc\blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\zc\blog\public/../application/index\view\index_index.html [ array (
+  0 => 'menuinfo',
+  1 => 'systeminfo',
+  2 => 'bannerlist',
+  3 => 'siderdata',
+  4 => 'footdata',
+  5 => 'tips',
+  6 => 'indexdata',
+  7 => 'title',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_menu` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_menu` WHERE  `menu_view` = 1 ORDER BY menu_sort [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_system` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] UPDATE `lt_system`  SET `sys_hits`=sys_hits+1  WHERE  `sys_id` = 1 [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_system` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_banner` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_banner` WHERE  `ban_view` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_article` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_keyword` FROM `lt_article` WHERE  (  art_view != 0 ) ORDER BY art_hit desc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view > 0 and art_down = 0  ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (1,2)  AND `art_down` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_comment` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `ac`.`com_id`,`ac`.`com_artid`,`ac`.`com_userid`,`m`.`mem_img`,`m`.`mem_name`,`ac`.`com_content`,`a`.`art_down` FROM `lt_comment` `ac` INNER JOIN `lt_article` `a` ON `a`.`art_id`=ac.com_artid and a.art_view > 0 INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`ac`.`com_userid` WHERE  (  ac.com_view = 1 and ac.com_artid > 0 ) ORDER BY ac.com_id desc LIMIT 5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `c`.`com_id`,`c`.`com_content`,`m`.`mem_name`,`m`.`mem_img` FROM `lt_comment` `c` INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`c`.`com_userid` WHERE  `com_artid` = 0 ORDER BY com_id desc LIMIT 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_hit`,`art_title` FROM `lt_article` ORDER BY art_hit desc LIMIT 8 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_article` WHERE  (  art_view > 0 ) LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view = 1 and com_artid != 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view= 1 and com_artid = 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view = 2 and art_down = 0  ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (1,2)  AND `art_down` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_link` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_link` WHERE  `link_view` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_title` FROM `lt_article` WHERE  `art_down` = 1 ORDER BY art_downloadnums desc LIMIT 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_title`,`art_img`,`art_remark`,`art_keyword`,`art_view`,`art_hit`,`menu_name`,`art_original`,`nums` FROM `lt_article` LEFT JOIN (select count(*) nums,com_artid from lt_comment group by com_artid) c ON `c`.`com_artid`=`lt_article`.`art_id` INNER JOIN `lt_menu` `m` ON `m`.`menu_id`=`lt_article`.`art_pid` WHERE  (  art_view > 0 ) ORDER BY art_id desc LIMIT 0,5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_tip` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_tip` WHERE  `tip_view` = 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-10-20T15:07:50+08:00 ] 127.0.0.1 127.0.0.1 GET /login-qqout.html
+[ log ] loveteemo.com/login-qqout.html [运行时间：0.134008s][吞吐率：7.46req/s] [内存消耗：3,063.17kb] [文件加载：57]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'Base',
+    2 => 'qqout',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://loveteemo.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437; _ga=GA1.2.1383165003.1507700041; PHPSESSID=euo1nt2dnfi5ugif9aolvpb1l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Base->qqout[ D:\wamp\www\zc\blog\application\index\controller\Base.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_menu` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_menu` WHERE  `menu_view` = 1 ORDER BY menu_sort [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_system` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] UPDATE `lt_system`  SET `sys_hits`=sys_hits+1  WHERE  `sys_id` = 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_system` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_banner` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_banner` WHERE  `ban_view` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_article` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_keyword` FROM `lt_article` WHERE  (  art_view != 0 ) ORDER BY art_hit desc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view > 0 and art_down = 0  ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (1,2)  AND `art_down` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_comment` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `ac`.`com_id`,`ac`.`com_artid`,`ac`.`com_userid`,`m`.`mem_img`,`m`.`mem_name`,`ac`.`com_content`,`a`.`art_down` FROM `lt_comment` `ac` INNER JOIN `lt_article` `a` ON `a`.`art_id`=ac.com_artid and a.art_view > 0 INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`ac`.`com_userid` WHERE  (  ac.com_view = 1 and ac.com_artid > 0 ) ORDER BY ac.com_id desc LIMIT 5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `c`.`com_id`,`c`.`com_content`,`m`.`mem_name`,`m`.`mem_img` FROM `lt_comment` `c` INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`c`.`com_userid` WHERE  `com_artid` = 0 ORDER BY com_id desc LIMIT 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_hit`,`art_title` FROM `lt_article` ORDER BY art_hit desc LIMIT 8 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_article` WHERE  (  art_view > 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view = 1 and com_artid != 0 ) LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view= 1 and com_artid = 0 ) LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view = 2 and art_down = 0  ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (2,1)  AND `art_down` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_link` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_link` WHERE  `link_view` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_title` FROM `lt_article` WHERE  `art_down` = 1 ORDER BY art_downloadnums desc LIMIT 4 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-10-20T15:07:50+08:00 ] 127.0.0.1 127.0.0.1 GET /index.html
+[ log ] loveteemo.com/index.html [运行时间：0.084005s][吞吐率：11.90req/s] [内存消耗：3,087.93kb] [文件加载：58]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://loveteemo.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437; _ga=GA1.2.1383165003.1507700041; PHPSESSID=euo1nt2dnfi5ugif9aolvpb1l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp\www\zc\blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\zc\blog\public/../application/index\view\index_index.html [ array (
+  0 => 'menuinfo',
+  1 => 'systeminfo',
+  2 => 'bannerlist',
+  3 => 'siderdata',
+  4 => 'footdata',
+  5 => 'tips',
+  6 => 'indexdata',
+  7 => 'title',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_system` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] UPDATE `lt_system`  SET `sys_hits`=sys_hits+1  WHERE  `sys_id` = 1 [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_article` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_title`,`art_img`,`art_remark`,`art_keyword`,`art_view`,`art_hit`,`menu_name`,`art_original`,`nums` FROM `lt_article` LEFT JOIN (select count(*) nums,com_artid from lt_comment group by com_artid) c ON `c`.`com_artid`=`lt_article`.`art_id` INNER JOIN `lt_menu` `m` ON `m`.`menu_id`=`lt_article`.`art_pid` WHERE  (  art_view > 0 ) ORDER BY art_id desc LIMIT 0,5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_tip` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_tip` WHERE  `tip_view` = 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-10-20T15:07:51+08:00 ] 127.0.0.1 127.0.0.1 GET /login-qq.html
+[ log ] loveteemo.com/login-qq.html [运行时间：0.096005s][吞吐率：10.42req/s] [内存消耗：3,084.52kb] [文件加载：61]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'Base',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://loveteemo.com/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437; _ga=GA1.2.1383165003.1507700041; PHPSESSID=euo1nt2dnfi5ugif9aolvpb1l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Base->login[ D:\wamp\www\zc\blog\application\index\controller\Base.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_menu` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_menu` WHERE  `menu_view` = 1 ORDER BY menu_sort [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_system` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] UPDATE `lt_system`  SET `sys_hits`=sys_hits+1  WHERE  `sys_id` = 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_system` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_banner` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_banner` WHERE  `ban_view` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_article` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_keyword` FROM `lt_article` WHERE  (  art_view != 0 ) ORDER BY art_hit desc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view > 0 and art_down = 0  ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (2,1)  AND `art_down` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_comment` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `ac`.`com_id`,`ac`.`com_artid`,`ac`.`com_userid`,`m`.`mem_img`,`m`.`mem_name`,`ac`.`com_content`,`a`.`art_down` FROM `lt_comment` `ac` INNER JOIN `lt_article` `a` ON `a`.`art_id`=ac.com_artid and a.art_view > 0 INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`ac`.`com_userid` WHERE  (  ac.com_view = 1 and ac.com_artid > 0 ) ORDER BY ac.com_id desc LIMIT 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `c`.`com_id`,`c`.`com_content`,`m`.`mem_name`,`m`.`mem_img` FROM `lt_comment` `c` INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`c`.`com_userid` WHERE  `com_artid` = 0 ORDER BY com_id desc LIMIT 5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_hit`,`art_title` FROM `lt_article` ORDER BY art_hit desc LIMIT 8 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-10-20T15:10:34+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] loveteemo.com/ [运行时间：0.118007s][吞吐率：8.47req/s] [内存消耗：3,108.42kb] [文件加载：58]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437; _ga=GA1.2.1383165003.1507700041; PHPSESSID=euo1nt2dnfi5ugif9aolvpb1l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp\www\zc\blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\zc\blog\public/../application/index\view\index_index.html [ array (
+  0 => 'menuinfo',
+  1 => 'systeminfo',
+  2 => 'bannerlist',
+  3 => 'siderdata',
+  4 => 'footdata',
+  5 => 'tips',
+  6 => 'indexdata',
+  7 => 'title',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_menu` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_menu` WHERE  `menu_view` = 1 ORDER BY menu_sort [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_system` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] UPDATE `lt_system`  SET `sys_hits`=sys_hits+1  WHERE  `sys_id` = 1 [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_system` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_banner` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_banner` WHERE  `ban_view` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_article` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_keyword` FROM `lt_article` WHERE  (  art_view != 0 ) ORDER BY art_hit desc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view > 0 and art_down = 0  ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (2,1)  AND `art_down` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_comment` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `ac`.`com_id`,`ac`.`com_artid`,`ac`.`com_userid`,`m`.`mem_img`,`m`.`mem_name`,`ac`.`com_content`,`a`.`art_down` FROM `lt_comment` `ac` INNER JOIN `lt_article` `a` ON `a`.`art_id`=ac.com_artid and a.art_view > 0 INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`ac`.`com_userid` WHERE  (  ac.com_view = 1 and ac.com_artid > 0 ) ORDER BY ac.com_id desc LIMIT 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `c`.`com_id`,`c`.`com_content`,`m`.`mem_name`,`m`.`mem_img` FROM `lt_comment` `c` INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`c`.`com_userid` WHERE  `com_artid` = 0 ORDER BY com_id desc LIMIT 5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_hit`,`art_title` FROM `lt_article` ORDER BY art_hit desc LIMIT 8 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_article` WHERE  (  art_view > 0 ) LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view = 1 and com_artid != 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view= 1 and com_artid = 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view = 2 and art_down = 0  ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (2,1)  AND `art_down` = 0 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_link` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_link` WHERE  `link_view` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_title` FROM `lt_article` WHERE  `art_down` = 1 ORDER BY art_downloadnums desc LIMIT 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_title`,`art_img`,`art_remark`,`art_keyword`,`art_view`,`art_hit`,`menu_name`,`art_original`,`nums` FROM `lt_article` LEFT JOIN (select count(*) nums,com_artid from lt_comment group by com_artid) c ON `c`.`com_artid`=`lt_article`.`art_id` INNER JOIN `lt_menu` `m` ON `m`.`menu_id`=`lt_article`.`art_pid` WHERE  (  art_view > 0 ) ORDER BY art_id desc LIMIT 0,5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_tip` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_tip` WHERE  `tip_view` = 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-10-20T15:12:02+08:00 ] 127.0.0.1 127.0.0.1 GET /uploads/20170221/fc40c635cce9f0c1ef438c80a5d8d579.png
+[ log ] loveteemo.com/uploads/20170221/fc40c635cce9f0c1ef438c80a5d8d579.png [运行时间：0.037003s][吞吐率：27.02req/s] [内存消耗：1,213.03kb] [文件加载：30]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => '20170221',
+    2 => 'fc40c635cce9f0c1ef438c80a5d8d579.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.loveteemo.com/download-159.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; PHPSESSID=euo1nt2dnfi5ugif9aolvpb1l0; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437,1508483463; Hm_lpvt_7b034b01fb6f25b5814c93865fa1c5ca=1508483466; _ga=GA1.2.1383165003.1507700041; _gid=GA1.2.1910372683.1508483476; _gat_web=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-10-20T15:12:02+08:00 ] 127.0.0.1 127.0.0.1 GET /uploads/20170221/d9ceb176c4adbce61745230a5fa40c9f.png
+[ log ] loveteemo.com/uploads/20170221/d9ceb176c4adbce61745230a5fa40c9f.png [运行时间：0.040003s][吞吐率：25.00req/s] [内存消耗：1,213.03kb] [文件加载：30]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => '20170221',
+    2 => 'd9ceb176c4adbce61745230a5fa40c9f.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.loveteemo.com/download-159.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; PHPSESSID=euo1nt2dnfi5ugif9aolvpb1l0; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437,1508483463; Hm_lpvt_7b034b01fb6f25b5814c93865fa1c5ca=1508483466; _ga=GA1.2.1383165003.1507700041; _gid=GA1.2.1910372683.1508483476; _gat_web=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-10-20T15:12:40+08:00 ] 127.0.0.1 127.0.0.1 GET /uploads/20170221/fc40c635cce9f0c1ef438c80a5d8d579.png
+[ log ] loveteemo.com/uploads/20170221/fc40c635cce9f0c1ef438c80a5d8d579.png [运行时间：0.029002s][吞吐率：34.48req/s] [内存消耗：1,213.02kb] [文件加载：30]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => '20170221',
+    2 => 'fc40c635cce9f0c1ef438c80a5d8d579.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.loveteemo.com/download-159.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; PHPSESSID=euo1nt2dnfi5ugif9aolvpb1l0; _ga=GA1.2.1383165003.1507700041; _gid=GA1.2.1910372683.1508483476; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437,1508483463; Hm_lpvt_7b034b01fb6f25b5814c93865fa1c5ca=1508483522',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-10-20T15:12:40+08:00 ] 127.0.0.1 127.0.0.1 GET /uploads/20170221/d9ceb176c4adbce61745230a5fa40c9f.png
+[ log ] loveteemo.com/uploads/20170221/d9ceb176c4adbce61745230a5fa40c9f.png [运行时间：0.031002s][吞吐率：32.26req/s] [内存消耗：1,213.02kb] [文件加载：30]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => '20170221',
+    2 => 'd9ceb176c4adbce61745230a5fa40c9f.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.loveteemo.com/download-159.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; PHPSESSID=euo1nt2dnfi5ugif9aolvpb1l0; _ga=GA1.2.1383165003.1507700041; _gid=GA1.2.1910372683.1508483476; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437,1508483463; Hm_lpvt_7b034b01fb6f25b5814c93865fa1c5ca=1508483522',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-10-20T15:13:21+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] loveteemo.com/ [运行时间：0.121007s][吞吐率：8.26req/s] [内存消耗：3,108.72kb] [文件加载：58]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; PHPSESSID=euo1nt2dnfi5ugif9aolvpb1l0; _ga=GA1.2.1383165003.1507700041; _gid=GA1.2.1910372683.1508483476; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437,1508483463; Hm_lpvt_7b034b01fb6f25b5814c93865fa1c5ca=1508483561',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp\www\zc\blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\zc\blog\public/../application/index\view\index_index.html [ array (
+  0 => 'menuinfo',
+  1 => 'systeminfo',
+  2 => 'bannerlist',
+  3 => 'siderdata',
+  4 => 'footdata',
+  5 => 'tips',
+  6 => 'indexdata',
+  7 => 'title',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_menu` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_menu` WHERE  `menu_view` = 1 ORDER BY menu_sort [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_system` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] UPDATE `lt_system`  SET `sys_hits`=sys_hits+1  WHERE  `sys_id` = 1 [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_system` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_banner` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_banner` WHERE  `ban_view` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_article` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_keyword` FROM `lt_article` WHERE  (  art_view != 0 ) ORDER BY art_hit desc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view > 0 and art_down = 0  ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (2,1)  AND `art_down` = 0 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_comment` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `ac`.`com_id`,`ac`.`com_artid`,`ac`.`com_userid`,`m`.`mem_img`,`m`.`mem_name`,`ac`.`com_content`,`a`.`art_down` FROM `lt_comment` `ac` INNER JOIN `lt_article` `a` ON `a`.`art_id`=ac.com_artid and a.art_view > 0 INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`ac`.`com_userid` WHERE  (  ac.com_view = 1 and ac.com_artid > 0 ) ORDER BY ac.com_id desc LIMIT 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `c`.`com_id`,`c`.`com_content`,`m`.`mem_name`,`m`.`mem_img` FROM `lt_comment` `c` INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`c`.`com_userid` WHERE  `com_artid` = 0 ORDER BY com_id desc LIMIT 5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_hit`,`art_title` FROM `lt_article` ORDER BY art_hit desc LIMIT 8 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_article` WHERE  (  art_view > 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view = 1 and com_artid != 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view= 1 and com_artid = 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view = 2 and art_down = 0  ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (2,1)  AND `art_down` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_link` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_link` WHERE  `link_view` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_title` FROM `lt_article` WHERE  `art_down` = 1 ORDER BY art_downloadnums desc LIMIT 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_title`,`art_img`,`art_remark`,`art_keyword`,`art_view`,`art_hit`,`menu_name`,`art_original`,`nums` FROM `lt_article` LEFT JOIN (select count(*) nums,com_artid from lt_comment group by com_artid) c ON `c`.`com_artid`=`lt_article`.`art_id` INNER JOIN `lt_menu` `m` ON `m`.`menu_id`=`lt_article`.`art_pid` WHERE  (  art_view > 0 ) ORDER BY art_id desc LIMIT 0,5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_tip` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_tip` WHERE  `tip_view` = 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-10-20T15:13:24+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] loveteemo.com/ [运行时间：0.142008s][吞吐率：7.04req/s] [内存消耗：3,108.72kb] [文件加载：58]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; PHPSESSID=euo1nt2dnfi5ugif9aolvpb1l0; _ga=GA1.2.1383165003.1507700041; _gid=GA1.2.1910372683.1508483476; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437,1508483463; Hm_lpvt_7b034b01fb6f25b5814c93865fa1c5ca=1508483561',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp\www\zc\blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\zc\blog\public/../application/index\view\index_index.html [ array (
+  0 => 'menuinfo',
+  1 => 'systeminfo',
+  2 => 'bannerlist',
+  3 => 'siderdata',
+  4 => 'footdata',
+  5 => 'tips',
+  6 => 'indexdata',
+  7 => 'title',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_menu` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_menu` WHERE  `menu_view` = 1 ORDER BY menu_sort [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_system` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] UPDATE `lt_system`  SET `sys_hits`=sys_hits+1  WHERE  `sys_id` = 1 [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_system` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_banner` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_banner` WHERE  `ban_view` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_article` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_keyword` FROM `lt_article` WHERE  (  art_view != 0 ) ORDER BY art_hit desc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view > 0 and art_down = 0  ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (1,2)  AND `art_down` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_comment` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT `ac`.`com_id`,`ac`.`com_artid`,`ac`.`com_userid`,`m`.`mem_img`,`m`.`mem_name`,`ac`.`com_content`,`a`.`art_down` FROM `lt_comment` `ac` INNER JOIN `lt_article` `a` ON `a`.`art_id`=ac.com_artid and a.art_view > 0 INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`ac`.`com_userid` WHERE  (  ac.com_view = 1 and ac.com_artid > 0 ) ORDER BY ac.com_id desc LIMIT 5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `c`.`com_id`,`c`.`com_content`,`m`.`mem_name`,`m`.`mem_img` FROM `lt_comment` `c` INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`c`.`com_userid` WHERE  `com_artid` = 0 ORDER BY com_id desc LIMIT 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_hit`,`art_title` FROM `lt_article` ORDER BY art_hit desc LIMIT 8 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_article` WHERE  (  art_view > 0 ) LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view = 1 and com_artid != 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view= 1 and com_artid = 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view = 2 and art_down = 0  ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (1,2)  AND `art_down` = 0 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_link` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_link` WHERE  `link_view` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_title` FROM `lt_article` WHERE  `art_down` = 1 ORDER BY art_downloadnums desc LIMIT 4 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_title`,`art_img`,`art_remark`,`art_keyword`,`art_view`,`art_hit`,`menu_name`,`art_original`,`nums` FROM `lt_article` LEFT JOIN (select count(*) nums,com_artid from lt_comment group by com_artid) c ON `c`.`com_artid`=`lt_article`.`art_id` INNER JOIN `lt_menu` `m` ON `m`.`menu_id`=`lt_article`.`art_pid` WHERE  (  art_view > 0 ) ORDER BY art_id desc LIMIT 0,5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_tip` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_tip` WHERE  `tip_view` = 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-10-20T15:13:36+08:00 ] 127.0.0.1 127.0.0.1 GET /index-base-callback.html
+[ log ] loveteemo.com/index-base-callback.html [运行时间：0.168009s][吞吐率：5.95req/s] [内存消耗：3,109.30kb] [文件加载：58]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; PHPSESSID=euo1nt2dnfi5ugif9aolvpb1l0; _ga=GA1.2.1383165003.1507700041; _gid=GA1.2.1910372683.1508483476; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437,1508483463; Hm_lpvt_7b034b01fb6f25b5814c93865fa1c5ca=1508483561',
+)
+[ info ] [ PARAM ] array (
+  'base' => 'callback',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp\www\zc\blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\zc\blog\public/../application/index\view\index_index.html [ array (
+  0 => 'menuinfo',
+  1 => 'systeminfo',
+  2 => 'bannerlist',
+  3 => 'siderdata',
+  4 => 'footdata',
+  5 => 'tips',
+  6 => 'indexdata',
+  7 => 'title',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_menu` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_menu` WHERE  `menu_view` = 1 ORDER BY menu_sort [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_system` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] UPDATE `lt_system`  SET `sys_hits`=sys_hits+1  WHERE  `sys_id` = 1 [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_system` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_banner` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_banner` WHERE  `ban_view` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_article` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_keyword` FROM `lt_article` WHERE  (  art_view != 0 ) ORDER BY art_hit desc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view > 0 and art_down = 0  ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (1,2)  AND `art_down` = 0 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_comment` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT `ac`.`com_id`,`ac`.`com_artid`,`ac`.`com_userid`,`m`.`mem_img`,`m`.`mem_name`,`ac`.`com_content`,`a`.`art_down` FROM `lt_comment` `ac` INNER JOIN `lt_article` `a` ON `a`.`art_id`=ac.com_artid and a.art_view > 0 INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`ac`.`com_userid` WHERE  (  ac.com_view = 1 and ac.com_artid > 0 ) ORDER BY ac.com_id desc LIMIT 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `c`.`com_id`,`c`.`com_content`,`m`.`mem_name`,`m`.`mem_img` FROM `lt_comment` `c` INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`c`.`com_userid` WHERE  `com_artid` = 0 ORDER BY com_id desc LIMIT 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_hit`,`art_title` FROM `lt_article` ORDER BY art_hit desc LIMIT 8 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_article` WHERE  (  art_view > 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view = 1 and com_artid != 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view= 1 and com_artid = 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view = 2 and art_down = 0  ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (2,1)  AND `art_down` = 0 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_link` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_link` WHERE  `link_view` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_title` FROM `lt_article` WHERE  `art_down` = 1 ORDER BY art_downloadnums desc LIMIT 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_title`,`art_img`,`art_remark`,`art_keyword`,`art_view`,`art_hit`,`menu_name`,`art_original`,`nums` FROM `lt_article` LEFT JOIN (select count(*) nums,com_artid from lt_comment group by com_artid) c ON `c`.`com_artid`=`lt_article`.`art_id` INNER JOIN `lt_menu` `m` ON `m`.`menu_id`=`lt_article`.`art_pid` WHERE  (  art_view > 0 ) ORDER BY art_id desc LIMIT 0,5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_tip` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_tip` WHERE  `tip_view` = 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-10-20T15:13:46+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/index-base-callback.html
+[ log ] loveteemo.com/index.php/index-base-callback.html [运行时间：0.107006s][吞吐率：9.35req/s] [内存消耗：3,109.45kb] [文件加载：58]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; PHPSESSID=euo1nt2dnfi5ugif9aolvpb1l0; _ga=GA1.2.1383165003.1507700041; _gid=GA1.2.1910372683.1508483476; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437,1508483463; Hm_lpvt_7b034b01fb6f25b5814c93865fa1c5ca=1508483561',
+)
+[ info ] [ PARAM ] array (
+  'base' => 'callback',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp\www\zc\blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\zc\blog\public/../application/index\view\index_index.html [ array (
+  0 => 'menuinfo',
+  1 => 'systeminfo',
+  2 => 'bannerlist',
+  3 => 'siderdata',
+  4 => 'footdata',
+  5 => 'tips',
+  6 => 'indexdata',
+  7 => 'title',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_menu` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_menu` WHERE  `menu_view` = 1 ORDER BY menu_sort [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_system` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] UPDATE `lt_system`  SET `sys_hits`=sys_hits+1  WHERE  `sys_id` = 1 [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_system` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_banner` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_banner` WHERE  `ban_view` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_article` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_keyword` FROM `lt_article` WHERE  (  art_view != 0 ) ORDER BY art_hit desc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view > 0 and art_down = 0  ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (2,1)  AND `art_down` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_comment` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `ac`.`com_id`,`ac`.`com_artid`,`ac`.`com_userid`,`m`.`mem_img`,`m`.`mem_name`,`ac`.`com_content`,`a`.`art_down` FROM `lt_comment` `ac` INNER JOIN `lt_article` `a` ON `a`.`art_id`=ac.com_artid and a.art_view > 0 INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`ac`.`com_userid` WHERE  (  ac.com_view = 1 and ac.com_artid > 0 ) ORDER BY ac.com_id desc LIMIT 5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `c`.`com_id`,`c`.`com_content`,`m`.`mem_name`,`m`.`mem_img` FROM `lt_comment` `c` INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`c`.`com_userid` WHERE  `com_artid` = 0 ORDER BY com_id desc LIMIT 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_hit`,`art_title` FROM `lt_article` ORDER BY art_hit desc LIMIT 8 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_article` WHERE  (  art_view > 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view = 1 and com_artid != 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view= 1 and com_artid = 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view = 2 and art_down = 0  ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (1,2)  AND `art_down` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_link` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_link` WHERE  `link_view` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_title` FROM `lt_article` WHERE  `art_down` = 1 ORDER BY art_downloadnums desc LIMIT 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_title`,`art_img`,`art_remark`,`art_keyword`,`art_view`,`art_hit`,`menu_name`,`art_original`,`nums` FROM `lt_article` LEFT JOIN (select count(*) nums,com_artid from lt_comment group by com_artid) c ON `c`.`com_artid`=`lt_article`.`art_id` INNER JOIN `lt_menu` `m` ON `m`.`menu_id`=`lt_article`.`art_pid` WHERE  (  art_view > 0 ) ORDER BY art_id desc LIMIT 0,5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_tip` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_tip` WHERE  `tip_view` = 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-10-20T15:13:49+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/index-base-callback.html
+[ log ] loveteemo.com/index.php/index-base-callback.html [运行时间：0.120007s][吞吐率：8.33req/s] [内存消耗：3,109.57kb] [文件加载：58]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; PHPSESSID=euo1nt2dnfi5ugif9aolvpb1l0; _ga=GA1.2.1383165003.1507700041; _gid=GA1.2.1910372683.1508483476; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437,1508483463; Hm_lpvt_7b034b01fb6f25b5814c93865fa1c5ca=1508483561',
+)
+[ info ] [ PARAM ] array (
+  'base' => 'callback',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp\www\zc\blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\zc\blog\public/../application/index\view\index_index.html [ array (
+  0 => 'menuinfo',
+  1 => 'systeminfo',
+  2 => 'bannerlist',
+  3 => 'siderdata',
+  4 => 'footdata',
+  5 => 'tips',
+  6 => 'indexdata',
+  7 => 'title',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_menu` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_menu` WHERE  `menu_view` = 1 ORDER BY menu_sort [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_system` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] UPDATE `lt_system`  SET `sys_hits`=sys_hits+1  WHERE  `sys_id` = 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_system` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_banner` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_banner` WHERE  `ban_view` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_article` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_keyword` FROM `lt_article` WHERE  (  art_view != 0 ) ORDER BY art_hit desc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view > 0 and art_down = 0  ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (2,1)  AND `art_down` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_comment` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT `ac`.`com_id`,`ac`.`com_artid`,`ac`.`com_userid`,`m`.`mem_img`,`m`.`mem_name`,`ac`.`com_content`,`a`.`art_down` FROM `lt_comment` `ac` INNER JOIN `lt_article` `a` ON `a`.`art_id`=ac.com_artid and a.art_view > 0 INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`ac`.`com_userid` WHERE  (  ac.com_view = 1 and ac.com_artid > 0 ) ORDER BY ac.com_id desc LIMIT 5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `c`.`com_id`,`c`.`com_content`,`m`.`mem_name`,`m`.`mem_img` FROM `lt_comment` `c` INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`c`.`com_userid` WHERE  `com_artid` = 0 ORDER BY com_id desc LIMIT 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_hit`,`art_title` FROM `lt_article` ORDER BY art_hit desc LIMIT 8 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_article` WHERE  (  art_view > 0 ) LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view = 1 and com_artid != 0 ) LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view= 1 and com_artid = 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view = 2 and art_down = 0  ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (1,2)  AND `art_down` = 0 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_link` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_link` WHERE  `link_view` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_title` FROM `lt_article` WHERE  `art_down` = 1 ORDER BY art_downloadnums desc LIMIT 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_title`,`art_img`,`art_remark`,`art_keyword`,`art_view`,`art_hit`,`menu_name`,`art_original`,`nums` FROM `lt_article` LEFT JOIN (select count(*) nums,com_artid from lt_comment group by com_artid) c ON `c`.`com_artid`=`lt_article`.`art_id` INNER JOIN `lt_menu` `m` ON `m`.`menu_id`=`lt_article`.`art_pid` WHERE  (  art_view > 0 ) ORDER BY art_id desc LIMIT 0,5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_tip` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_tip` WHERE  `tip_view` = 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-10-20T15:33:45+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] loveteemo.com/ [运行时间：0.137008s][吞吐率：7.30req/s] [内存消耗：3,108.72kb] [文件加载：58]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; PHPSESSID=euo1nt2dnfi5ugif9aolvpb1l0; _ga=GA1.2.1383165003.1507700041; _gid=GA1.2.1910372683.1508483476; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437,1508483463; Hm_lpvt_7b034b01fb6f25b5814c93865fa1c5ca=1508483561',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp\www\zc\blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\zc\blog\public/../application/index\view\index_index.html [ array (
+  0 => 'menuinfo',
+  1 => 'systeminfo',
+  2 => 'bannerlist',
+  3 => 'siderdata',
+  4 => 'footdata',
+  5 => 'tips',
+  6 => 'indexdata',
+  7 => 'title',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_menu` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_menu` WHERE  `menu_view` = 1 ORDER BY menu_sort [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_system` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] UPDATE `lt_system`  SET `sys_hits`=sys_hits+1  WHERE  `sys_id` = 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_system` LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_banner` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_banner` WHERE  `ban_view` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_article` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_keyword` FROM `lt_article` WHERE  (  art_view != 0 ) ORDER BY art_hit desc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view > 0 and art_down = 0  ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (1,2)  AND `art_down` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_comment` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT `ac`.`com_id`,`ac`.`com_artid`,`ac`.`com_userid`,`m`.`mem_img`,`m`.`mem_name`,`ac`.`com_content`,`a`.`art_down` FROM `lt_comment` `ac` INNER JOIN `lt_article` `a` ON `a`.`art_id`=ac.com_artid and a.art_view > 0 INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`ac`.`com_userid` WHERE  (  ac.com_view = 1 and ac.com_artid > 0 ) ORDER BY ac.com_id desc LIMIT 5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `c`.`com_id`,`c`.`com_content`,`m`.`mem_name`,`m`.`mem_img` FROM `lt_comment` `c` INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`c`.`com_userid` WHERE  `com_artid` = 0 ORDER BY com_id desc LIMIT 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_hit`,`art_title` FROM `lt_article` ORDER BY art_hit desc LIMIT 8 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_article` WHERE  (  art_view > 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view = 1 and com_artid != 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view= 1 and com_artid = 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view = 2 and art_down = 0  ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (2,1)  AND `art_down` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_link` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_link` WHERE  `link_view` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_title` FROM `lt_article` WHERE  `art_down` = 1 ORDER BY art_downloadnums desc LIMIT 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_title`,`art_img`,`art_remark`,`art_keyword`,`art_view`,`art_hit`,`menu_name`,`art_original`,`nums` FROM `lt_article` LEFT JOIN (select count(*) nums,com_artid from lt_comment group by com_artid) c ON `c`.`com_artid`=`lt_article`.`art_id` INNER JOIN `lt_menu` `m` ON `m`.`menu_id`=`lt_article`.`art_pid` WHERE  (  art_view > 0 ) ORDER BY art_id desc LIMIT 0,5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_tip` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_tip` WHERE  `tip_view` = 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-10-20T15:33:47+08:00 ] 127.0.0.1 127.0.0.1 GET /login-qq.html
+[ log ] loveteemo.com/login-qq.html [运行时间：0.114006s][吞吐率：8.77req/s] [内存消耗：3,089.43kb] [文件加载：61]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'Base',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://loveteemo.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; PHPSESSID=euo1nt2dnfi5ugif9aolvpb1l0; _ga=GA1.2.1383165003.1507700041; _gid=GA1.2.1910372683.1508483476; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437,1508483463; Hm_lpvt_7b034b01fb6f25b5814c93865fa1c5ca=1508483561',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Base->login[ D:\wamp\www\zc\blog\application\index\controller\Base.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_menu` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_menu` WHERE  `menu_view` = 1 ORDER BY menu_sort [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_system` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] UPDATE `lt_system`  SET `sys_hits`=sys_hits+1  WHERE  `sys_id` = 1 [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_system` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_banner` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_banner` WHERE  `ban_view` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_article` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_keyword` FROM `lt_article` WHERE  (  art_view != 0 ) ORDER BY art_hit desc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view > 0 and art_down = 0  ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (2,1)  AND `art_down` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_comment` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `ac`.`com_id`,`ac`.`com_artid`,`ac`.`com_userid`,`m`.`mem_img`,`m`.`mem_name`,`ac`.`com_content`,`a`.`art_down` FROM `lt_comment` `ac` INNER JOIN `lt_article` `a` ON `a`.`art_id`=ac.com_artid and a.art_view > 0 INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`ac`.`com_userid` WHERE  (  ac.com_view = 1 and ac.com_artid > 0 ) ORDER BY ac.com_id desc LIMIT 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `c`.`com_id`,`c`.`com_content`,`m`.`mem_name`,`m`.`mem_img` FROM `lt_comment` `c` INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`c`.`com_userid` WHERE  `com_artid` = 0 ORDER BY com_id desc LIMIT 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_hit`,`art_title` FROM `lt_article` ORDER BY art_hit desc LIMIT 8 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_article` WHERE  (  art_view > 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view = 1 and com_artid != 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view= 1 and com_artid = 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view = 2 and art_down = 0  ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (2,1)  AND `art_down` = 0 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_link` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_link` WHERE  `link_view` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_title` FROM `lt_article` WHERE  `art_down` = 1 ORDER BY art_downloadnums desc LIMIT 4 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------

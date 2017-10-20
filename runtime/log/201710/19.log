@@ -1,0 +1,689 @@
+[ 2017-10-19T14:51:45+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] loveteemo.com/ [运行时间：0.314018s][吞吐率：3.18req/s] [内存消耗：3,066.08kb] [文件加载：58]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437; _ga=GA1.2.1383165003.1507700041',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp\www\zc\blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\zc\blog\public/../application/index\view\index_index.html [ array (
+  0 => 'menuinfo',
+  1 => 'systeminfo',
+  2 => 'bannerlist',
+  3 => 'siderdata',
+  4 => 'footdata',
+  5 => 'tips',
+  6 => 'indexdata',
+  7 => 'title',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009001s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_menu` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_menu` WHERE  `menu_view` = 1 ORDER BY menu_sort [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_system` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] UPDATE `lt_system`  SET `sys_hits`=sys_hits+1  WHERE  `sys_id` = 1 [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_system` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_banner` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_banner` WHERE  `ban_view` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_article` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_keyword` FROM `lt_article` WHERE  (  art_view != 0 ) ORDER BY art_hit desc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view > 0 and art_down = 0  ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (1)  AND `art_down` = 0 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_comment` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `ac`.`com_id`,`ac`.`com_artid`,`ac`.`com_userid`,`m`.`mem_img`,`m`.`mem_name`,`ac`.`com_content`,`a`.`art_down` FROM `lt_comment` `ac` INNER JOIN `lt_article` `a` ON `a`.`art_id`=ac.com_artid and a.art_view > 0 INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`ac`.`com_userid` WHERE  (  ac.com_view = 1 and ac.com_artid > 0 ) ORDER BY ac.com_id desc LIMIT 5 [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `c`.`com_id`,`c`.`com_content`,`m`.`mem_name`,`m`.`mem_img` FROM `lt_comment` `c` INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`c`.`com_userid` WHERE  `com_artid` = 0 ORDER BY com_id desc LIMIT 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_hit`,`art_title` FROM `lt_article` ORDER BY art_hit desc LIMIT 8 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_article` WHERE  (  art_view > 0 ) LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view = 1 and com_artid != 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view= 1 and com_artid = 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view = 2 and art_down = 0  ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (1)  AND `art_down` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_link` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_link` WHERE  `link_view` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_title` FROM `lt_article` WHERE  `art_down` = 1 ORDER BY art_downloadnums desc LIMIT 4 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_title`,`art_img`,`art_remark`,`art_keyword`,`art_view`,`art_hit`,`menu_name`,`art_original`,`nums` FROM `lt_article` LEFT JOIN (select count(*) nums,com_artid from lt_comment group by com_artid) c ON `c`.`com_artid`=`lt_article`.`art_id` INNER JOIN `lt_menu` `m` ON `m`.`menu_id`=`lt_article`.`art_pid` WHERE  (  art_view > 0 ) ORDER BY art_id desc LIMIT 0,5 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_tip` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_tip` WHERE  `tip_view` = 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-10-19T14:51:47+08:00 ] 127.0.0.1 127.0.0.1 GET /login-qq.html
+[ log ] loveteemo.com/login-qq.html [运行时间：0.129007s][吞吐率：7.75req/s] [内存消耗：3,066.13kb] [文件加载：61]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'Base',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://loveteemo.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437; _ga=GA1.2.1383165003.1507700041; PHPSESSID=c73umrkedh4l9q04cr8h8l3096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Base->login[ D:\wamp\www\zc\blog\application\index\controller\Base.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_menu` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_menu` WHERE  `menu_view` = 1 ORDER BY menu_sort [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_system` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] UPDATE `lt_system`  SET `sys_hits`=sys_hits+1  WHERE  `sys_id` = 1 [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_system` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_banner` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_banner` WHERE  `ban_view` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_article` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_keyword` FROM `lt_article` WHERE  (  art_view != 0 ) ORDER BY art_hit desc [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view > 0 and art_down = 0  ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (1)  AND `art_down` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_comment` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `ac`.`com_id`,`ac`.`com_artid`,`ac`.`com_userid`,`m`.`mem_img`,`m`.`mem_name`,`ac`.`com_content`,`a`.`art_down` FROM `lt_comment` `ac` INNER JOIN `lt_article` `a` ON `a`.`art_id`=ac.com_artid and a.art_view > 0 INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`ac`.`com_userid` WHERE  (  ac.com_view = 1 and ac.com_artid > 0 ) ORDER BY ac.com_id desc LIMIT 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `c`.`com_id`,`c`.`com_content`,`m`.`mem_name`,`m`.`mem_img` FROM `lt_comment` `c` INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`c`.`com_userid` WHERE  `com_artid` = 0 ORDER BY com_id desc LIMIT 5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_hit`,`art_title` FROM `lt_article` ORDER BY art_hit desc LIMIT 8 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_article` WHERE  (  art_view > 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view = 1 and com_artid != 0 ) LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view= 1 and com_artid = 0 ) LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view = 2 and art_down = 0  ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (1)  AND `art_down` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_link` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_link` WHERE  `link_view` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_title` FROM `lt_article` WHERE  `art_down` = 1 ORDER BY art_downloadnums desc LIMIT 4 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-10-19T14:51:55+08:00 ] 127.0.0.1 127.0.0.1 GET /index/base/callback?code=A28797AD612BD7F639CFC3217C5F05F9&state=bffc6ed29197a0e6248a50ec14b33aac
+[ log ] loveteemo.com/index/base/callback?code=A28797AD612BD7F639CFC3217C5F05F9&state=bffc6ed29197a0e6248a50ec14b33aac [运行时间：1.825104s][吞吐率：0.55req/s] [内存消耗：3,087.23kb] [文件加载：62]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'base',
+    2 => 'callback',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437; _ga=GA1.2.1383165003.1507700041; PHPSESSID=c73umrkedh4l9q04cr8h8l3096',
+)
+[ info ] [ PARAM ] array (
+  'code' => 'A28797AD612BD7F639CFC3217C5F05F9',
+  'state' => 'bffc6ed29197a0e6248a50ec14b33aac',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Base->callback[ D:\wamp\www\zc\blog\application\index\controller\Base.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ VIEW ] D:\wamp\www\zc\blog\public/../application/index\view\base_callback.html [ array (
+  0 => 'menuinfo',
+  1 => 'systeminfo',
+  2 => 'bannerlist',
+  3 => 'siderdata',
+  4 => 'footdata',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_menu` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_menu` WHERE  `menu_view` = 1 ORDER BY menu_sort [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_system` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] UPDATE `lt_system`  SET `sys_hits`=sys_hits+1  WHERE  `sys_id` = 1 [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_system` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_banner` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_banner` WHERE  `ban_view` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_article` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_keyword` FROM `lt_article` WHERE  (  art_view != 0 ) ORDER BY art_hit desc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view > 0 and art_down = 0  ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (1)  AND `art_down` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_comment` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `ac`.`com_id`,`ac`.`com_artid`,`ac`.`com_userid`,`m`.`mem_img`,`m`.`mem_name`,`ac`.`com_content`,`a`.`art_down` FROM `lt_comment` `ac` INNER JOIN `lt_article` `a` ON `a`.`art_id`=ac.com_artid and a.art_view > 0 INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`ac`.`com_userid` WHERE  (  ac.com_view = 1 and ac.com_artid > 0 ) ORDER BY ac.com_id desc LIMIT 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `c`.`com_id`,`c`.`com_content`,`m`.`mem_name`,`m`.`mem_img` FROM `lt_comment` `c` INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`c`.`com_userid` WHERE  `com_artid` = 0 ORDER BY com_id desc LIMIT 5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_hit`,`art_title` FROM `lt_article` ORDER BY art_hit desc LIMIT 8 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_article` WHERE  (  art_view > 0 ) LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view = 1 and com_artid != 0 ) LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view= 1 and com_artid = 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view = 2 and art_down = 0  ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (1)  AND `art_down` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_link` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_link` WHERE  `link_view` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_title` FROM `lt_article` WHERE  `art_down` = 1 ORDER BY art_downloadnums desc LIMIT 4 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_member` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_member` WHERE  `mem_openid` = '2DF96DF45CF2165B41AE42968465DA11' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `lt_member`  SET `mem_logintime`=1508395915,`mem_loginnum`=mem_loginnum+1  WHERE  `mem_id` = 1 [ RunTime:0.006001s ]
+
+---------------------------------------------------------------
+[ 2017-10-19T14:51:55+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] loveteemo.com/ [运行时间：0.174010s][吞吐率：5.75req/s] [内存消耗：3,067.41kb] [文件加载：58]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://loveteemo.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437; _ga=GA1.2.1383165003.1507700041; PHPSESSID=c73umrkedh4l9q04cr8h8l3096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp\www\zc\blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\zc\blog\public/../application/index\view\index_index.html [ array (
+  0 => 'menuinfo',
+  1 => 'systeminfo',
+  2 => 'bannerlist',
+  3 => 'siderdata',
+  4 => 'footdata',
+  5 => 'tips',
+  6 => 'indexdata',
+  7 => 'title',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_menu` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_menu` WHERE  `menu_view` = 1 ORDER BY menu_sort [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_system` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] UPDATE `lt_system`  SET `sys_hits`=sys_hits+1  WHERE  `sys_id` = 1 [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_system` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_banner` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_banner` WHERE  `ban_view` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_article` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_keyword` FROM `lt_article` WHERE  (  art_view != 0 ) ORDER BY art_hit desc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view > 0 and art_down = 0  ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (1)  AND `art_down` = 0 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_comment` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `ac`.`com_id`,`ac`.`com_artid`,`ac`.`com_userid`,`m`.`mem_img`,`m`.`mem_name`,`ac`.`com_content`,`a`.`art_down` FROM `lt_comment` `ac` INNER JOIN `lt_article` `a` ON `a`.`art_id`=ac.com_artid and a.art_view > 0 INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`ac`.`com_userid` WHERE  (  ac.com_view = 1 and ac.com_artid > 0 ) ORDER BY ac.com_id desc LIMIT 5 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `c`.`com_id`,`c`.`com_content`,`m`.`mem_name`,`m`.`mem_img` FROM `lt_comment` `c` INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`c`.`com_userid` WHERE  `com_artid` = 0 ORDER BY com_id desc LIMIT 5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_hit`,`art_title` FROM `lt_article` ORDER BY art_hit desc LIMIT 8 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_article` WHERE  (  art_view > 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view = 1 and com_artid != 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view= 1 and com_artid = 0 ) LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view = 2 and art_down = 0  ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (1)  AND `art_down` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_link` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_link` WHERE  `link_view` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_title` FROM `lt_article` WHERE  `art_down` = 1 ORDER BY art_downloadnums desc LIMIT 4 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_title`,`art_img`,`art_remark`,`art_keyword`,`art_view`,`art_hit`,`menu_name`,`art_original`,`nums` FROM `lt_article` LEFT JOIN (select count(*) nums,com_artid from lt_comment group by com_artid) c ON `c`.`com_artid`=`lt_article`.`art_id` INNER JOIN `lt_menu` `m` ON `m`.`menu_id`=`lt_article`.`art_pid` WHERE  (  art_view > 0 ) ORDER BY art_id desc LIMIT 0,5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_tip` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_tip` WHERE  `tip_view` = 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-10-19T14:52:05+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/Admin-link-index.html
+[ log ] loveteemo.com/index.php/Admin-link-index.html [运行时间：0.075005s][吞吐率：13.33req/s] [内存消耗：2,859.96kb] [文件加载：56]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'link',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437; _ga=GA1.2.1383165003.1507700041; PHPSESSID=c73umrkedh4l9q04cr8h8l3096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Link->index[ D:\wamp\www\zc\blog\application\admin\controller\Link.php ]
+[ info ] [ VIEW ] D:\wamp\www\zc\blog\public/../application/admin\view\link/index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_member` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT `mem_id` FROM `lt_member` WHERE  `mem_auth` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_link` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_link` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_link` ORDER BY link_id desc LIMIT 0,10 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-10-19T14:52:09+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/Admin-article-index.html
+[ log ] loveteemo.com/index.php/Admin-article-index.html [运行时间：0.058003s][吞吐率：17.24req/s] [内存消耗：2,883.57kb] [文件加载：56]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://loveteemo.com/index.php/Admin-link-index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437; _ga=GA1.2.1383165003.1507700041; PHPSESSID=c73umrkedh4l9q04cr8h8l3096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->index[ D:\wamp\www\zc\blog\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\wamp\www\zc\blog\public/../application/admin\view\article/index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_member` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `mem_id` FROM `lt_member` WHERE  `mem_auth` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_article` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_article` `a` LEFT JOIN (select count(*) nums,com_artid from lt_comment group by com_artid) c ON `c`.`com_artid`=`a`.`art_id` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` `a` LEFT JOIN (select count(*) nums,com_artid from lt_comment group by com_artid) c ON `c`.`com_artid`=`a`.`art_id` ORDER BY art_id desc LIMIT 0,10 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-10-19T14:52:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/Admin-article-add.html
+[ log ] loveteemo.com/index.php/Admin-article-add.html [运行时间：0.047002s][吞吐率：21.28req/s] [内存消耗：2,753.39kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'article',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://loveteemo.com/index.php/Admin-article-index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437; _ga=GA1.2.1383165003.1507700041; PHPSESSID=c73umrkedh4l9q04cr8h8l3096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->add[ D:\wamp\www\zc\blog\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\wamp\www\zc\blog\public/../application/admin\view\article/add.html [ array (
+  0 => 'menulist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_member` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `mem_id` FROM `lt_member` WHERE  `mem_auth` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_menu` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_menu` WHERE  `menu_parent` <> 0 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-10-19T14:53:42+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/Admin-article-add.html
+[ log ] loveteemo.com/index.php/Admin-article-add.html [运行时间：0.075004s][吞吐率：13.33req/s] [内存消耗：2,739.35kb] [文件加载：51]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'article',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'content-length' => '34375',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://loveteemo.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://loveteemo.com/index.php/Admin-article-add.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437; _ga=GA1.2.1383165003.1507700041; PHPSESSID=c73umrkedh4l9q04cr8h8l3096',
+)
+[ info ] [ PARAM ] array (
+  'art_title' => 'windows7下安装php的php-ssh2扩展教程',
+  'art_pid' => '5',
+  'art_keyword' => 'php,ssh2',
+  'art_remark' => '因为想做一个往测试服务器传文件的需求，看到PHP支持ssh操作，所以整理了下安装过程，与大家分享下。',
+  'art_view' => '2',
+  'art_original' => '1',
+  'art_url' => '',
+  'art_author' => '周冲',
+  'art_img' => 'data:image/png;base64,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',
+  'art_content' => '<p>安装步骤</p><p>1. 下载&nbsp;<a target="_blank" href="http://www.bitscn.com/pdb/php/">php</a>&nbsp;extension ssh2下载地址 http://windows.php.net/downloads/pecl/releases/ssh2/0.12/</p><p>根据自己PHP的版本去下载，我使用的是线程安全的，所以下载的是php_ssh2-0.12-5.4-ts-vc9-x86.zip</p><p>2. 解压完后，会有三个文件，libssh2.dll、php_ssh.dll、php_ssh2.pdb。</p><p>3. 将 php_ssh.dll 放到你的 php 扩展目录下 php/ext/ 下。</p><p>4. 将libssh2.dll 复制到 c:/windows/system32 和 c:/windows/syswow64 各一份</p><p>5. php.ini中加入 extension=php_ssh2.dll</p><p>6. 重启apache，即可使用php执行ssh连接操作了。</p><p>查看phpinfo()，是否有显示php_ssh2扩展加载成功。</p><p>PHP测试代码</p><p></p><p>复制代码&nbsp;代码如下:&lt;?php$connection = ssh2_connect(\'192.168.255.128\', 22);ssh2_auth_password($connection, \'root\', \'123456\');ssh2_scp_send($connection, \'d:/tmp/test.txt\', \'/tmp/test.txt\', 0644);</p><p><br></p>',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->add[ D:\wamp\www\zc\blog\application\admin\controller\Article.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_member` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT `mem_id` FROM `lt_member` WHERE  `mem_auth` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_article` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] INSERT INTO `lt_article` (`art_title` , `art_pid` , `art_keyword` , `art_remark` , `art_view` , `art_original` , `art_url` , `art_author` , `art_img` , `art_content` , `art_addtime` , `art_from` , `art_city` , `art_down`) VALUES ('windows7下安装php的php-ssh2扩展教程' , 5 , 'php,ssh2' , '因为想做一个往测试服务器传文件的需求，看到PHP支持ssh操作，所以整理了下安装过程，与大家分享下。' , 2 , 1 , '' , '周冲' , '/uploads/20171019/1508396022.jpg' , '<p>安装步骤</p><p>1. 下载&nbsp;<a target=\"_blank\" href=\"http://www.bitscn.com/pdb/php/\">php</a>&nbsp;extension ssh2下载地址 http://windows.php.net/downloads/pecl/releases/ssh2/0.12/</p><p>根据自己PHP的版本去下载，我使用的是线程安全的，所以下载的是php_ssh2-0.12-5.4-ts-vc9-x86.zip</p><p>2. 解压完后，会有三个文件，libssh2.dll、php_ssh.dll、php_ssh2.pdb。</p><p>3. 将 php_ssh.dll 放到你的 php 扩展目录下 php/ext/ 下。</p><p>4. 将libssh2.dll 复制到 c:/windows/system32 和 c:/windows/syswow64 各一份</p><p>5. php.ini中加入 extension=php_ssh2.dll</p><p>6. 重启apache，即可使用php执行ssh连接操作了。</p><p>查看phpinfo()，是否有显示php_ssh2扩展加载成功。</p><p>PHP测试代码</p><p></p><p>复制代码&nbsp;代码如下:&lt;?php$connection = ssh2_connect(\'192.168.255.128\', 22);ssh2_auth_password($connection, \'root\', \'123456\');ssh2_scp_send($connection, \'d:/tmp/test.txt\', \'/tmp/test.txt\', 0644);</p><p><br></p>' , 1508396022 , 'Win 7' , '本机地址' , 0) [ RunTime:0.004001s ]
+
+---------------------------------------------------------------
+[ 2017-10-19T14:53:45+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/Admin-article-index.html
+[ log ] loveteemo.com/index.php/Admin-article-index.html [运行时间：0.077004s][吞吐率：12.99req/s] [内存消耗：2,891.43kb] [文件加载：56]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://loveteemo.com/index.php/Admin-article-add.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437; _ga=GA1.2.1383165003.1507700041; PHPSESSID=c73umrkedh4l9q04cr8h8l3096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->index[ D:\wamp\www\zc\blog\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\wamp\www\zc\blog\public/../application/admin\view\article/index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_member` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `mem_id` FROM `lt_member` WHERE  `mem_auth` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_article` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_article` `a` LEFT JOIN (select count(*) nums,com_artid from lt_comment group by com_artid) c ON `c`.`com_artid`=`a`.`art_id` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` `a` LEFT JOIN (select count(*) nums,com_artid from lt_comment group by com_artid) c ON `c`.`com_artid`=`a`.`art_id` ORDER BY art_id desc LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-10-19T14:53:55+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] loveteemo.com/ [运行时间：0.119007s][吞吐率：8.40req/s] [内存消耗：3,108.98kb] [文件加载：58]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437; _ga=GA1.2.1383165003.1507700041; PHPSESSID=c73umrkedh4l9q04cr8h8l3096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp\www\zc\blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\zc\blog\public/../application/index\view\index_index.html [ array (
+  0 => 'menuinfo',
+  1 => 'systeminfo',
+  2 => 'bannerlist',
+  3 => 'siderdata',
+  4 => 'footdata',
+  5 => 'tips',
+  6 => 'indexdata',
+  7 => 'title',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_menu` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_menu` WHERE  `menu_view` = 1 ORDER BY menu_sort [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_system` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] UPDATE `lt_system`  SET `sys_hits`=sys_hits+1  WHERE  `sys_id` = 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_system` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_banner` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_banner` WHERE  `ban_view` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_article` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_keyword` FROM `lt_article` WHERE  (  art_view != 0 ) ORDER BY art_hit desc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view > 0 and art_down = 0  ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (2,1)  AND `art_down` = 0 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_comment` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `ac`.`com_id`,`ac`.`com_artid`,`ac`.`com_userid`,`m`.`mem_img`,`m`.`mem_name`,`ac`.`com_content`,`a`.`art_down` FROM `lt_comment` `ac` INNER JOIN `lt_article` `a` ON `a`.`art_id`=ac.com_artid and a.art_view > 0 INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`ac`.`com_userid` WHERE  (  ac.com_view = 1 and ac.com_artid > 0 ) ORDER BY ac.com_id desc LIMIT 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `c`.`com_id`,`c`.`com_content`,`m`.`mem_name`,`m`.`mem_img` FROM `lt_comment` `c` INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`c`.`com_userid` WHERE  `com_artid` = 0 ORDER BY com_id desc LIMIT 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_hit`,`art_title` FROM `lt_article` ORDER BY art_hit desc LIMIT 8 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_article` WHERE  (  art_view > 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view = 1 and com_artid != 0 ) LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view= 1 and com_artid = 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view = 2 and art_down = 0  ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (1,2)  AND `art_down` = 0 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_link` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_link` WHERE  `link_view` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_title` FROM `lt_article` WHERE  `art_down` = 1 ORDER BY art_downloadnums desc LIMIT 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_title`,`art_img`,`art_remark`,`art_keyword`,`art_view`,`art_hit`,`menu_name`,`art_original`,`nums` FROM `lt_article` LEFT JOIN (select count(*) nums,com_artid from lt_comment group by com_artid) c ON `c`.`com_artid`=`lt_article`.`art_id` INNER JOIN `lt_menu` `m` ON `m`.`menu_id`=`lt_article`.`art_pid` WHERE  (  art_view > 0 ) ORDER BY art_id desc LIMIT 0,5 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_tip` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_tip` WHERE  `tip_view` = 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-10-19T14:53:58+08:00 ] 127.0.0.1 127.0.0.1 GET /article-2.html
+[ log ] loveteemo.com/article-2.html [运行时间：0.161009s][吞吐率：6.21req/s] [内存消耗：3,326.34kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\zc\blog\framework\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'Article',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'loveteemo.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://loveteemo.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bdshare_firstime=1507703975289; Hm_lvt_7b034b01fb6f25b5814c93865fa1c5ca=1507699907,1508204437; _ga=GA1.2.1383165003.1507700041; PHPSESSID=c73umrkedh4l9q04cr8h8l3096',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Article->index[ D:\wamp\www\zc\blog\application\index\controller\Article.php ]
+[ info ] [ VIEW ] D:\wamp\www\zc\blog\public/../application/index\view\article_index.html [ array (
+  0 => 'menuinfo',
+  1 => 'systeminfo',
+  2 => 'bannerlist',
+  3 => 'siderdata',
+  4 => 'footdata',
+  5 => 'other',
+  6 => 'articledata',
+  7 => 'articlecommondata',
+  8 => 'title',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=demo;host=loveteemo.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_menu` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_menu` WHERE  `menu_view` = 1 ORDER BY menu_sort [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_system` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] UPDATE `lt_system`  SET `sys_hits`=sys_hits+1  WHERE  `sys_id` = 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_system` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_banner` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_banner` WHERE  `ban_view` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_article` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_keyword` FROM `lt_article` WHERE  (  art_view != 0 ) ORDER BY art_hit desc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view > 0 and art_down = 0  ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (1,2)  AND `art_down` = 0 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_comment` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `ac`.`com_id`,`ac`.`com_artid`,`ac`.`com_userid`,`m`.`mem_img`,`m`.`mem_name`,`ac`.`com_content`,`a`.`art_down` FROM `lt_comment` `ac` INNER JOIN `lt_article` `a` ON `a`.`art_id`=ac.com_artid and a.art_view > 0 INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`ac`.`com_userid` WHERE  (  ac.com_view = 1 and ac.com_artid > 0 ) ORDER BY ac.com_id desc LIMIT 5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `c`.`com_id`,`c`.`com_content`,`m`.`mem_name`,`m`.`mem_img` FROM `lt_comment` `c` INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`c`.`com_userid` WHERE  `com_artid` = 0 ORDER BY com_id desc LIMIT 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_hit`,`art_title` FROM `lt_article` ORDER BY art_hit desc LIMIT 8 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_article` WHERE  (  art_view > 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view = 1 and com_artid != 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_comment` WHERE  (  com_view= 1 and com_artid = 0 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `art_id` FROM `lt_article` WHERE  (  art_view = 2 and art_down = 0  ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  `art_id` IN (1,2)  AND `art_down` = 0 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_link` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_link` WHERE  `link_view` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `art_id`,`art_title` FROM `lt_article` WHERE  `art_down` = 1 ORDER BY art_downloadnums desc LIMIT 4 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `lt_article`  SET `art_hit`=art_hit+1  WHERE  `art_id` = 2  AND `art_view` > 0 [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT `a`.*,`m`.`menu_name` FROM `lt_article` `a` INNER JOIN `lt_menu` `m` ON `m`.`menu_id`=`a`.`art_pid` WHERE  `art_id` = 2  AND `art_view` > 0 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_comment` `ac` INNER JOIN `lt_member` `m` ON `m`.`mem_id`=`ac`.`com_userid` WHERE  `ac`.`com_artid` = '2'  AND `com_view` = 1 ORDER BY ac.com_id desc LIMIT 0,5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  (  art_id < 2 and art_view in (1,2) and art_pid != 99 ) ORDER BY art_id desc LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_article` WHERE  (  art_id > 2 and art_view in (1,2) and art_pid != 99 ) ORDER BY art_id asc LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
